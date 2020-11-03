@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.dropdown:hover>.dropdown-menu{
+    display:block;
+}
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+    
+  }
+  .bg-custom1{
+      background: -webkit-linear-gradient(left,#9900ff, #0066ff);
+  }
+.navbar-text{
+    font-size: larger;
+    font-weight: 700;
+    color: orangered;
+}
+.dropdown-menu{
+    background: #0066ff;
+    margin-top: 10px;
+    height: 108px;
+}
+.dropdown-item{
+    border-bottom: solid 1px whitesmoke;
+}
+.dropdown-menu .dropdown-item{
+    color: whitesmoke;
+}
+.main-row{
+    margin-top: 10%;
+}
+.card{
+    cursor: pointer;
+}
+.card img{
+    transform: translateY(-50px);
+    border-radius: 15px;
+    z-index: 1;
+}
+.card .card-body{
+    visibility: hidden;
+    transform: translateY(-150px);
+    height: 0px;
+}
+.card:hover .card-body{
+    visibility: visible;
+    transform: translateY(-50px);
+    transition: .5s;
+    height: auto;
+}
+.contact{
+    font-family: 'Times New Roman', Times, serif;
+}
+.socialmedia ul{
+    display: inline-block;
+}
+.socialmedia ul li{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.socialmedia ul li a{
+    font-size: 24px;
+    letter-spacing: 0.1em;
+}
+body{
+    font-family: 'Roboto', sans-serif
+}
