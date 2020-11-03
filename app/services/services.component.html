@@ -1,0 +1,12 @@
+<mat-accordion>
+  <mat-expansion-panel 
+    *ngFor="let service of servicesList; let i = index;"
+    [expanded]="step === i" (opened)="setStep(i)" hideToggle="true">    
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ service.header }}
+      </mat-panel-title>     
+    </mat-expansion-panel-header>
+    <p>{{ service.content }}</p>
+  </mat-expansion-panel>
+</mat-accordion>
